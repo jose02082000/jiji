@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FinalChallenge</string>
+    <string name="text_login">Ingresa tus datos para acceder</string>
+    <string name="button_login">Ingresar</string>
+    <string name="button_fingerprint">Ingresar con huella</string>
+    <string name="hint_email">  Email</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="text_send_documents">Enviar documentos</string>
+    <string name="text_see_documents">Ver documentos</string>
+    <string name="text_ofices">Oficinas</string>
+    <string name="button_login_menu">Ingresar</string>
+    <string name="text_send_documents_documents">Envío de documentación</string>
+    <string name="type_document">Tipo de documento</string>
+    <string name="number_document">Número de documento</string>
+</resources>

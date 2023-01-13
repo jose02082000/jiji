@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.LoginActivity"
+    tools:ignore="MissingClass">
+
+    <ImageView
+        android:id="@+id/sophos_logo"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/sophos_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="65dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/text_login"
+        android:textAlignment="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sophos_logo"
+        app:lineHeight="16dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin">
+
+        <ImageView
+            android:id="@+id/image_email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/input_border_left"
+            android:padding="10dp"
+            android:src="@drawable/user_icon"/>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/TextEmailAddress"
+            android:background="@drawable/input_border_right"
+            android:fontFamily="@font/montserrat_light"
+            android:hint="@string/hint_email"
+            android:textColorHint="@color/main_text_color"
+            android:textSize="15sp"
+            style="@style/text_user_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/input_border_left"
+            android:src="@drawable/passsword_icon"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/TextPassword"
+            android:background="@drawable/input_border_right"
+            android:fontFamily="@font/montserrat_light"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/show_password"
+            android:padding="10dp"
+            style="@style/text_user_password" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        android:text="@string/button_login"
+        android:layout_marginTop="50dp"
+        style="@style/btn_login"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/button_login_fingerprint"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/button_fingerprint"
+        android:textColor="@color/main_text_color"
+        android:drawableLeft="@drawable/fingerprint_icon"
+        style="@style/btn_login"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login"
+        app:strokeColor="@color/main_text_color"
+        app:strokeWidth="1.3dip"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

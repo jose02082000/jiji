@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_user_password">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColorHint">@color/main_text_color</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="btn_login">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="btn_menu">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    
+    <style name="icons">
+        <item name=""></item>
+    </style>
+</resources>

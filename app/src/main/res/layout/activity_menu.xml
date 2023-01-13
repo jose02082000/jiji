@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.MenuActivity">
+
+    <ImageView
+        android:id="@+id/imageMenu"
+        android:layout_width="479dp"
+        android:layout_height="267dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plantilla_corporativa_2022_1" />
+
+    <ImageView
+        android:id="@+id/imageViewRectanglePink"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="44dp"
+        android:padding="0dp"
+        android:background="@drawable/rectangle_button_menu"
+        app:srcCompat="@drawable/rectangle_button_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMenu" />
+
+    <ImageView
+        android:id="@+id/imageViewRectanglePurple"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="30dp"
+        android:padding="0dp"
+        android:background="@drawable/second_rectangle_menu"
+        app:srcCompat="@drawable/second_rectangle_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRectanglePink" />
+
+    <ImageView
+        android:id="@+id/imageViewRectangleBlue"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="30dp"
+        android:padding="0dp"
+        android:background="@drawable/third_rectangle_menu"
+        app:srcCompat="@drawable/third_rectangle_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRectanglePurple" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="22dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/description"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:text="@string/text_send_documents"
+        android:textColor="@color/rectangle_menu"
+        style="@style/btn_menu"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/button_login_menu"
+        android:textSize="11sp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/rectangle_menu"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/arrow_right_alt"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMenu"
+        app:strokeColor="@color/rectangle_menu"
+        app:strokeWidth="1dip"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="22dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/plagiarism"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:text="@string/text_see_documents"
+        android:textColor="@color/second_rectangle_menu"
+        style="@style/btn_menu"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:text="@string/button_login_menu"
+        android:textColor="@color/second_rectangle_menu"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAllCaps="false"
+        android:textSize="11sp"
+        android:backgroundTint="@color/white"
+        android:textAlignment="textEnd"
+        android:drawableRight="@drawable/arrow_right_alt__1_"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="466dp"
+        app:cornerRadius="12dp"
+        app:strokeColor="@color/second_rectangle_menu"
+        app:strokeWidth="1dip"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="22dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/location_on"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="571dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/text_ofices"
+        android:textColor="@color/third_rectangle_menu"
+        style="@style/btn_menu"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:text="@string/button_login_menu"
+        android:textColor="@color/third_rectangle_menu"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="12dp"
+        app:strokeColor="@color/third_rectangle_menu"
+        app:strokeWidth="1dip"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
